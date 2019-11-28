@@ -20,8 +20,7 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
-    //res.json(surveyData);
-    // I AM NOT SURE WHAT TO DO HERE :()
+    friendsData.push(req.body); 
   });
-};
+}
 

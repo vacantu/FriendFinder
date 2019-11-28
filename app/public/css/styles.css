@@ -1,6 +1,6 @@
 
 body {
-    background: url(../images/bg.jpg) no-repeat center bottom/cover !important;
+    background: url(./img/bg.jpg) no-repeat center bottom/cover !important;
     height: 100vh !important;
 }
 .jumbotron {
