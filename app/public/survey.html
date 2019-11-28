@@ -14,13 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     <!-- My Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
-    <title>Survey</title>
+    <link rel="stylesheet" href="./assets/css/survey_styles.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="container">
-            <br/><br/><a href="/"><button class="btn btn-primary btn-lg">
-            <i class="fa fa-check-circle" aria-hidden="true"></i>Go Home</button></a>
         <h1>Survey Questions</h1>
         <h3><strong>About You</strong></h3>
         <h4>Name (Required)</h4>
@@ -166,6 +164,7 @@
 <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
 <script type="text/javascript">
  
+<<<<<<< HEAD
     $("#submit").on("click", function(event) {
       event.preventDefault();
   
@@ -193,6 +192,33 @@
       $.post("/api/friends", newFriend,
         function(data) {
         console.log("DATA: ",data);
+=======
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+  
+      // Here we grab the form elements
+      var newFriend = {
+        inputName: $("#name").val().trim(),
+        inputLinkPhoto: $("#photo").val().trim(),
+        inputQ1: $("#q1").val().trim(),
+        inputQ2: $("#q2").val().trim(),
+        inputQ3: $("#q3").val().trim(),
+        inputQ4: $("#q4").val().trim(),
+        inputQ5: $("#q5").val().trim(),
+        inputQ6: $("#q6").val().trim(),
+        inputQ7: $("#q7").val().trim(),
+        inputQ8: $("#q8").val().trim(),
+        InputQ9: $("#q9").val().trim(),
+        inputQ10: $("#q10").val().trim()
+      };
+  
+      console.log(newFriend);
+  
+    
+      $.post("/api/survey", newFriend,
+        function(data) {
+  
+>>>>>>> 476e7a057841f5b3188ffc07ab1a6684548fbb87
           // If a match tell user, and display name and photo.
           if (data) {
             alert("Yay! Your questions were received. Now let's find you a new friend.");

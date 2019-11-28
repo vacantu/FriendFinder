@@ -1,5 +1,5 @@
 // =========================================
-// SERVER.JS FOR FRIENDS FINDER
+// SEERVER.JS FOR FRIENDS FINDER
 // VIRGILIO CANTU
 // 11/21/19
 // =========================================
@@ -8,7 +8,6 @@
 // =============================================================
 const express = require("express");
 const bodyParser = require("body-parser");
-const path = require("path");
 const dotenv = require("dotenv").config();
 
 // Create an Express server
@@ -20,7 +19,6 @@ var PORT = process.env.EXPRESSPORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, '/public')));
 // Point to the route files
 require("./app/routes/apiRoutes")(app);
 require("./app/routes/htmlRoutes")(app);
