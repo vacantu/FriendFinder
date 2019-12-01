@@ -1,0 +1,14 @@
+body {
+    background: url("/bg.jpg") no-repeat center bottom/cover !important;
+    height: 100vh !important;
+}
+.jumbotron {
+    opacity: 55% !important;
+    margin-top: 50px !important;
+    border-radius: 10px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+h1 {
+    color: red !important;
+}

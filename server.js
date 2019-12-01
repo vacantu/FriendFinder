@@ -1,5 +1,5 @@
 // =========================================
-// SEERVER.JS FOR FRIENDS FINDER
+// SERVER.JS FOR FRIENDS FINDER
 // VIRGILIO CANTU
 // 11/21/19
 // =========================================
@@ -9,6 +9,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv").config();
+const path = require("path");
+
+// Call the module for floating windows
+//const jsFrame = new JSFrame();
 
 // Create an Express server
 var app = express();
@@ -22,6 +26,9 @@ app.use(express.json());
 // Point to the route files
 require("./app/routes/apiRoutes")(app);
 require("./app/routes/htmlRoutes")(app);
+
+// Added to define the static dir
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Starts the server to begin listening
 // =============================================================

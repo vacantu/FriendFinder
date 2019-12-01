@@ -1,7 +1,6 @@
 {
   "name": "friendfinder",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,18 +10,25 @@
     "type": "git",
     "url": "git+https://github.com/vacantu/FriendFinder.git"
   },
-  "author": "",
+  "author": "Virgiliuo Cantu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vacantu/FriendFinder/issues"
   },
   "homepage": "https://github.com/vacantu/FriendFinder#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "expresss": "0.0.0",
     "html": "^1.0.0",
+    "jsframe": "0.1.0-3",
+    "jsframe.js": "^1.5.14",
     "mysql": "^2.17.1",
     "nodemon": "^2.0.0",
-    "path": "^0.12.7"
-  }
+    "path": "^0.12.7",
+    "routes": "^2.1.0"
+  },
+  "devDependencies": {},
+  "description": "FriendFinder Homework App"
 }

@@ -432,19 +432,19 @@ var friendsArray = [
     ]
     },
     {
-    "name": "Manuel",
-    "photo": "",
+    "name": "Manuel Garcia",
+    "photo": "https://i.ytimg.com/vi/mLm5r7VoV54/hqdefault.jpg",
     "scores": [
-    "2",
     "1",
     "1",
-    "2",
-    "2",
-    "5",
-    "3",
-    "4",
-    "3",
-    "3"
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
     ]
     }
     ]
