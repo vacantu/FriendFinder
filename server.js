@@ -17,7 +17,7 @@ const path = require("path");
 // Create an Express server
 var app = express();
 // Sets an initi]al port
-var PORT = process.env.EXPRESSPORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing / MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
