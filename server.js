@@ -25,7 +25,7 @@ app.use(express.json());
 
 // Point to the route files
 require("./app/routes/apiRoutes")(app);
-require("./app/routes/htmlroutesold")(app);
+require("./app/routes/htmlRoutes")(app);
 
 // Added to define the static dir
 app.use(express.static(path.join(__dirname, '/public')));
